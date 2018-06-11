@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[text not passed]]>
+    </line>
+    <line>
+      <![CDATA[text not passed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="34406" started-at="2018-06-08T03:08:44Z" finished-at="2018-06-08T03:09:18Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="28482" started-at="2018-06-08T03:08:44Z" finished-at="2018-06-08T03:09:12Z">
+      <class name="com.keximbanking.custlogin.TestExecution">
+        <test-method status="PASS" signature="verify_launch(java.lang.String)[pri:0, instance:com.keximbanking.custlogin.TestExecution@327471b5]" name="verify_launch" is-config="true" duration-ms="21264" started-at="2018-06-08T08:38:44Z" finished-at="2018-06-08T08:39:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_launch -->
+        <test-method status="PASS" signature="verify_login()[pri:1, instance:com.keximbanking.custlogin.TestExecution@327471b5]" name="verify_login" duration-ms="7174" started-at="2018-06-08T08:39:05Z" finished-at="2018-06-08T08:39:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[text not passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+      </class> <!-- com.keximbanking.custlogin.TestExecution -->
+    </test> <!-- FirefoxTest -->
+    <test name="chromeTest" duration-ms="34406" started-at="2018-06-08T03:08:44Z" finished-at="2018-06-08T03:09:18Z">
+      <class name="com.keximbanking.custlogin.TestExecution">
+        <test-method status="PASS" signature="verify_launch(java.lang.String)[pri:0, instance:com.keximbanking.custlogin.TestExecution@531be3c5]" name="verify_launch" is-config="true" duration-ms="25274" started-at="2018-06-08T08:38:44Z" finished-at="2018-06-08T08:39:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_launch -->
+        <test-method status="PASS" signature="verify_login()[pri:1, instance:com.keximbanking.custlogin.TestExecution@531be3c5]" name="verify_login" duration-ms="9129" started-at="2018-06-08T08:39:09Z" finished-at="2018-06-08T08:39:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[text not passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+      </class> <!-- com.keximbanking.custlogin.TestExecution -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

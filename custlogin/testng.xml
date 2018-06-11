@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  
+  <test name="FirefoxTest">
+  
+  <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.keximbanking.custlogin.TestExecution">
+      <methods>
+      
+         <include name="verify_login()"></include>
+      </methods>
+      </class>
+     </classes>
+    </test> 
+      
+    
+   
+  <test name="chromeTest">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.keximbanking.custlogin.TestExecution">
+      <methods>
+      
+         <include name="verify_login()"></include>
+      </methods>
+	 </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
