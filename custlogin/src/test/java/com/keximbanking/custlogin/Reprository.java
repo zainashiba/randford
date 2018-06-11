@@ -143,6 +143,7 @@ public class Reprository extends GenericPage{
 		{
 			Reporter.log("Branch name already exist");
 			validation.emailSending(driver, "login");
+			System.out.println("github");
 			
 		}
 		
