@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.keximbanking.custlogin.TestExecution">
+        <methods>
+          <include name="verify_login"/>
+          <include name="verify_launch"/>
+          <include name="verify_launch"/>
+        </methods>
+      </class> <!-- com.keximbanking.custlogin.TestExecution -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.keximbanking.custlogin.TestExecution">
+        <methods>
+          <include name="verify_login"/>
+          <include name="verify_launch"/>
+          <include name="verify_launch"/>
+        </methods>
+      </class> <!-- com.keximbanking.custlogin.TestExecution -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
