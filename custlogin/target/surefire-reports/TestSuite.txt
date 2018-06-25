@@ -1,4 +1,101 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.251 sec - in TestSuite
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 48.864 sec <<< FAILURE! - in TestSuite
+verify_launch(com.keximbanking.custlogin.TestExecution)  Time elapsed: 47.056 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'user', ip: '172.20.10.4', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
+Driver info: driver.version: FirefoxDriver
+	at com.keximbanking.custlogin.TestExecution.verify_launch(TestExecution.java:23)
+
+verify_launch(com.keximbanking.custlogin.TestExecution)  Time elapsed: 1.68 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+-7e08-4474-a285-3208198ce6fd}","syncGUID":"z2qf8qQVi4WR","location":"app-global","version":"48.0","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1469558821000,"updateDate":1469558821000,"applyBackgroundUpdates":1,"skinnable":true,"size":21899,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"48.0","maxVersion":"48.0"}],"targetPlatforms":[],"seen":true}
+1529917612377	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1529917612378	DeferredSave.extensions.json	DEBUG	Save changes
+1529917612378	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1529917612379	addons.xpi-utils	DEBUG	Updating add-on states
+1529917612379	addons.xpi-utils	DEBUG	Writing add-ons list
+1529917612382	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1529917612383	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1529917612383	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1529917612383	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1529917612384	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1529917612385	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.4.3
+1529917612405	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1529917612405	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1529917612405	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1529917612405	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1529917612406	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1529917612406	addons.manager	DEBUG	Starting provider: GMPProvider
+1529917612413	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1529917612413	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1529917612413	addons.manager	DEBUG	Starting provider: PluginProvider
+1529917612413	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1529917612414	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1529917612414	addons.manager	DEBUG	Completed startup sequence
+1529917614120	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1529917614120	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1529917614120	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1529917614122	DeferredSave.extensions.json	DEBUG	Starting write
+1529917614335	addons.repository	DEBUG	No addons.json found.
+1529917614336	DeferredSave.addons.json	DEBUG	Save changes
+1529917614358	DeferredSave.addons.json	DEBUG	Starting timer
+1529917614398	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1529917614398	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1529917614398	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1529917614401	DeferredSave.extensions.json	DEBUG	Write succeeded
+1529917614402	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1529917614411	DeferredSave.addons.json	DEBUG	Starting write
+1529917614538	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'user', ip: '172.20.10.4', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
+Driver info: driver.version: FirefoxDriver
+	at com.keximbanking.custlogin.TestExecution.verify_launch(TestExecution.java:23)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: 
+Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+-7e08-4474-a285-3208198ce6fd}","syncGUID":"z2qf8qQVi4WR","location":"app-global","version":"48.0","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1469558821000,"updateDate":1469558821000,"applyBackgroundUpdates":1,"skinnable":true,"size":21899,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"48.0","maxVersion":"48.0"}],"targetPlatforms":[],"seen":true}
+1529917612377	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1529917612378	DeferredSave.extensions.json	DEBUG	Save changes
+1529917612378	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1529917612379	addons.xpi-utils	DEBUG	Updating add-on states
+1529917612379	addons.xpi-utils	DEBUG	Writing add-ons list
+1529917612382	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1529917612383	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1529917612383	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1529917612383	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1529917612384	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1529917612385	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.4.3
+1529917612405	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1529917612405	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1529917612405	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1529917612405	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1529917612406	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1529917612406	addons.manager	DEBUG	Starting provider: GMPProvider
+1529917612413	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1529917612413	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1529917612413	addons.manager	DEBUG	Starting provider: PluginProvider
+1529917612413	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1529917612414	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1529917612414	addons.manager	DEBUG	Completed startup sequence
+1529917614120	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1529917614120	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1529917614120	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1529917614122	DeferredSave.extensions.json	DEBUG	Starting write
+1529917614335	addons.repository	DEBUG	No addons.json found.
+1529917614336	DeferredSave.addons.json	DEBUG	Save changes
+1529917614358	DeferredSave.addons.json	DEBUG	Starting timer
+1529917614398	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1529917614398	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1529917614398	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1529917614401	DeferredSave.extensions.json	DEBUG	Write succeeded
+1529917614402	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1529917614411	DeferredSave.addons.json	DEBUG	Starting write
+1529917614538	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at com.keximbanking.custlogin.TestExecution.verify_launch(TestExecution.java:23)
+

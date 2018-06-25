@@ -30,7 +30,7 @@ public class AdminPage extends Base{
 
 	public static WebElement employee_button(WebDriver driver) {
 
-		return driver.findElement(getlocator("employee_btn"));
+		return driver.findElement(getlocator(""));
 
 	}
 	

@@ -50,27 +50,13 @@
     <version>1.4</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-
-    
-
-
-<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-
-   
-
-
-
-
-
-
 
    </dependencies>
    
    <build>
    
      <plugins>
-     
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-compiler-plugin</artifactId>
@@ -78,6 +64,8 @@
         
         </plugin>
         
+        
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
         <plugin>
         
             <groupId>org.apache.maven.plugins</groupId>

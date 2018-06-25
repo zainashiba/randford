@@ -14,27 +14,27 @@
       <![CDATA[Branch name already exist]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49221" started-at="2018-06-08T03:45:52Z" finished-at="2018-06-08T03:46:41Z">
+  <suite name="Default suite" duration-ms="39127" started-at="2018-06-25T09:47:00Z" finished-at="2018-06-25T09:47:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49221" started-at="2018-06-08T03:45:52Z" finished-at="2018-06-08T03:46:41Z">
+    <test name="Default test" duration-ms="39127" started-at="2018-06-25T09:47:00Z" finished-at="2018-06-25T09:47:39Z">
       <class name="com.keximbanking.custlogin.TestExecution">
-        <test-method status="PASS" signature="verify_launch()[pri:0, instance:com.keximbanking.custlogin.TestExecution@3b0143d3]" name="verify_launch" is-config="true" duration-ms="10782" started-at="2018-06-08T09:15:52Z" finished-at="2018-06-08T09:16:03Z">
+        <test-method status="PASS" signature="verify_launch()[pri:0, instance:com.keximbanking.custlogin.TestExecution@56ac3a89]" name="verify_launch" is-config="true" duration-ms="13792" started-at="2018-06-25T15:17:00Z" finished-at="2018-06-25T15:17:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_launch -->
-        <test-method status="PASS" signature="verify_login()[pri:1, instance:com.keximbanking.custlogin.TestExecution@3b0143d3]" name="verify_login" duration-ms="4380" started-at="2018-06-08T09:16:03Z" finished-at="2018-06-08T09:16:07Z">
+        <test-method status="PASS" signature="verify_login()[pri:1, instance:com.keximbanking.custlogin.TestExecution@56ac3a89]" name="verify_login" duration-ms="5454" started-at="2018-06-25T15:17:13Z" finished-at="2018-06-25T15:17:19Z">
           <reporter-output>
             <line>
               <![CDATA[text not passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- verify_login -->
-        <test-method status="PASS" signature="branch_clicking()[pri:2, instance:com.keximbanking.custlogin.TestExecution@3b0143d3]" name="branch_clicking" duration-ms="902" started-at="2018-06-08T09:16:07Z" finished-at="2018-06-08T09:16:08Z">
+        <test-method status="PASS" signature="branch_clicking()[pri:2, instance:com.keximbanking.custlogin.TestExecution@56ac3a89]" name="branch_clicking" duration-ms="1710" started-at="2018-06-25T15:17:19Z" finished-at="2018-06-25T15:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- branch_clicking -->
-        <test-method status="PASS" signature="verify_content()[pri:3, instance:com.keximbanking.custlogin.TestExecution@3b0143d3]" name="verify_content" duration-ms="33101" started-at="2018-06-08T09:16:08Z" finished-at="2018-06-08T09:16:41Z">
+        <test-method status="PASS" signature="verify_content()[pri:3, instance:com.keximbanking.custlogin.TestExecution@56ac3a89]" name="verify_content" duration-ms="18151" started-at="2018-06-25T15:17:21Z" finished-at="2018-06-25T15:17:39Z">
           <reporter-output>
             <line>
               <![CDATA[Branch name already exist]]>

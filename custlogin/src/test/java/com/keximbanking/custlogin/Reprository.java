@@ -16,11 +16,9 @@ import org.testng.annotations.Parameters;
 import Excel.Excel_class;
 import PageLibrary.AdminPage;
 import PageLibrary.BranchPage;
-import PageLibrary.EmpPage;
 import PageLibrary.GenericPage;
 import PageLibrary.HomePage;
 import PageLibrary.RolePage;
-import PageLibrary.UsersPage;
 import Utility.validation;
 //import table.WebTable;
 //import TestBase.Base;
@@ -67,6 +65,10 @@ public class Reprository extends GenericPage{
 		
 		driver=new FirefoxDriver();
 		
+		
+		//System.setProperty("webdriver.chrome.driver", "E:\\backup files\\shiba_JAVA\\chromedriver_win32_new\\chromedriver.exe");
+
+	    //driver = new ChromeDriver();
 		driver.get(config("build1"));
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -82,7 +84,7 @@ public class Reprository extends GenericPage{
 		HomePage.login_button(driver).click();
 		
         if (validation.isTextPresent(driver, "sdfghjkldfghj")){
-			
+ 			
 			Reporter.log("text is passed");
 			
 			
@@ -143,12 +145,27 @@ public class Reprository extends GenericPage{
 		{
 			Reporter.log("Branch name already exist");
 			validation.emailSending(driver, "login");
-			System.out.println("github");
 			
 		}
 		
 	}
 	
+	
+	
+	public void click_role()
+	{
+		
+		AdminPage.roles_button(driver).click();
+	}
+	
+	public void create_newrole()
+	{
+		
+		RolePage.newrole_btn(driver).click();
+		RolePage.Role_name(driver).sendKeys("manager");
+		RolePage.role_type(driver).sendKeys("management");
+		RolePage.role_submit_btn(driver).click();
+	}
 	
 	public Object[][] excelcontent(String filename,String sheetname)
 	{
@@ -174,60 +191,7 @@ public class Reprository extends GenericPage{
 	}
 	
 	
-	
-	public void click_role()
-	{
-		
-		AdminPage.roles_button(driver).click();
-	}
-	
-	public void create_newrole()
-	{
-		
-		RolePage.newrole_btn(driver).click();
-		RolePage.Role_name(driver).sendKeys("manager");
-		RolePage.role_type(driver).sendKeys("management");
-		RolePage.role_submit_btn(driver).click();
-	}
 
-	
-	
-	public void click_users()
-	{
-		
-		AdminPage.users_button(driver).click();
-	}
-	
-	public void create_newusers()
-	{
-		
-		UsersPage.newUsers_btn(driver).click();
-		GenericPage.dropDownSelection(driver, getlocator("users_roletxt")).selectByVisibleText("");
-		GenericPage.dropDownSelection(driver, getlocator("users_branchtxt")).selectByVisibleText("");
-		GenericPage.dropDownSelection(driver, getlocator("users_custID")).selectByVisibleText("");
-		UsersPage.users_custName(driver).sendKeys("");
-		UsersPage.users_userName(driver).sendKeys("");
-		UsersPage.users_loginPassword(driver).sendKeys("");
-		UsersPage.users_Transactpwd(driver).sendKeys("");
-		UsersPage.users_submit_Btn(driver).click();
-		
-	}
-	
-	public void click_employee()
-	{
-		
-		AdminPage.employee_button(driver).click();
-	}
-	
-	public void create_newemployee()
-	{
-		
-		EmpPage.emp_emplogin_Btn(driver).click();
-		EmpPage.emp_empNametxt(driver).sendKeys("");
-		EmpPage.emp_emplogin_Btn(driver).sendKeys("");
-		GenericPage.dropDownSelection(driver, getlocator("emp_emprole_txt")).selectByVisibleText("");
-		GenericPage.dropDownSelection(driver, getlocator("emp_empbranch_txt")).selectByVisibleText("");
-		EmpPage.emp_submit_btn(driver).click();
-	}
+			
 			
 }

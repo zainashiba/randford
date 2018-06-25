@@ -5,6 +5,8 @@
     <classes>
       <class name="com.keximbanking.custlogin.TestExecution">
         <methods>
+          <include name="verify_login"/>
+          <include name="branch_clicking"/>
           <include name="verify_content"/>
           <include name="verify_launch"/>
         </methods>
